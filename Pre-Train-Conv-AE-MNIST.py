@@ -249,7 +249,7 @@ def get_latent_vectors(Img,CAE, batch_size):
 
 if __name__ == '__main__':
     
-    mnist_256= np.load('/media/kowshik/Data1/pytorch-LargescaleOT/Large-Scale-OT/PyTorch/toyXps/Domain_adaptation_full/Domain_adaptation_expts/mnist_256.npz')
+    mnist_256= np.load('Data/mnist_256.npz')
     mnist_img=mnist_256['mnist_256']
     mnist_labels=mnist_256['mnist_labels']
     
