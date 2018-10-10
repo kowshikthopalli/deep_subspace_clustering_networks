@@ -266,11 +266,11 @@ if __name__ == '__main__':
     model_path = 'models_face/mymnist.ckpt'
     CAE = ConvAE(n_input = n_input, n_hidden = n_hidden, learning_rate = lr, kernel_size = kernel_size, 
                  batch_size = batch_size, model_path = model_path,restore_path= model_path,logs_path= 'logs')
-    lv=get_latent_vectors(Img,CAE, batch_size)
-    print(lv.shape)
-    np.savez('latent_vectors_mnist.npz',lv_mnist=lv)
+   # lv=get_latent_vectors(Img,CAE, batch_size)
+   # print(lv.shape)
+   # np.savez('latent_vectors_mnist.npz',lv_mnist=lv)
    # test_face(Img,CAE,n_input)
-    #train_face(Img, CAE, n_input, batch_size)
+    train_face(Img, CAE, n_input, batch_size)
     
     #X = np.reshape(Img, [Img.shape[0],n_input[0],n_input[1],1])
     #ae_feature_clustering(CAE, X)
