@@ -1,3 +1,6 @@
+# My experiments with the following paper on MNIST and USPS datasets
+Pre_Train_ files represent only auto encoder and their checkpoints are saved in models_face
+DSC_Net_L2 .py files represent the subspace clustering algorithms. 
 # Deep-subspace-clustering-networks
 
 Tensorflow implementation for our NIPS'17 paper:
